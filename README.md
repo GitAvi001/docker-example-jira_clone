@@ -10,5 +10,5 @@ Understanding the docker images , docker containers and docker compose working t
 2. docker build .
 
 #Start docker-compose file
-1. cd ..
+1. cd . .
 2. docker-compose build
