@@ -1,0 +1,21 @@
+#base image extended
+FROM node:14 AS Production
+
+#ENvironment variable 
+ENV NODE_ENV=production
+
+#This working directory defines for a UNIX based file system
+# WORKDIR /usr/src/client
+
+#dependecy installation
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install
+
+COPY . .
+
+RUN npm build
+
+CMD ["sh", "-c", "npm run start:production"]
+
