@@ -8,8 +8,8 @@ Understanding the docker images , docker containers and docker compose working t
 
 # Build Docker image from client DockerFile
 1. cd jira_clone/client
-2. 
-3. docker build .
+   
+2. docker build .
 
 # Start docker-compose file
 1. cd . .
